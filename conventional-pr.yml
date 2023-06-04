@@ -44,4 +44,6 @@ jobs:
           delete: true
       - if: ${{ steps.lint_pr_title.outputs.error_message == null }}
         uses: bcoe/conventional-release-labels@v1
+        with:
+          ignored_types: []
 
